@@ -4,6 +4,7 @@ from time import sleep
 from random import random
 from typing import Dict, List
 from selenium.webdriver import Chrome
+import pandas as pd
 
 
 class Extract:
@@ -11,9 +12,13 @@ class Extract:
         self.browser = browser
         _, er = self.login()
         pages, er = self.get_pages()
-        print(pages)
         poems_href, er = self.get_poems_href(pages)
-        print(poems_href)
+        poems_list = self.get_poems_text(poems_href)
+        print(" ")
+        print(poems_list)
+        print(" ")
+        print(pd.DataFrame(poems_list))
+        print(" ")
 
     @exception_handler
     def login(self):
@@ -47,7 +52,8 @@ class Extract:
         max_pages = int(index.text.split(" ")[-1].split(":")[0])
         for i in range(2, max_pages + 1):
             pages.append(
-                f"https://www.recantodasletras.com.br/escrivaninha/publicacoes/index.php?pag={i}"
+                "https://www.recantodasletras.com.br/escrivaninha/"
+                f"publicacoes/index.php?pag={i}"
             )
 
         return pages
@@ -64,14 +70,15 @@ class Extract:
             self.browser.get(page)
             sleep(1 + random())
             titles = self.browser.find_elements_by_class_name("index-title")[1:]
-            categories = self.browser.find_elements_by_class_name("index-category")
-            dates = self.browser.find_elements_by_class_name("index-date")
-            views = self.browser.find_elements_by_class_name("index-views")
+            categories = self.browser.find_elements_by_class_name("index-category")[1:]
+            dates = self.browser.find_elements_by_class_name("index-date")[1:]
+            views = self.browser.find_elements_by_class_name("index-views")[1:]
 
             for title, category, date, view in zip(titles, categories, dates, views):
                 poem = {}
                 p = title.find_element_by_tag_name("a")
                 poem["title"] = p.text
+                poem["text"] = " "
                 poem["href"] = p.get_attribute("href")
                 poem["category"] = category.text
                 poem["date"] = date.text
@@ -79,6 +86,31 @@ class Extract:
                 poems.append(poem)
 
         return poems
+
+    @exception_handler
+    def get_poem(self, href: str) -> str:
+        """Return text of poem"""
+        sleep(1 + random())
+        self.browser.get(href)
+        body = self.browser.find_element_by_class_name("boxtexto")
+        divs = body.find_elements_by_tag_name("div")
+        return divs[0].text
+
+    def get_poems_text(self, poems_href: List[Dict[str, str]]) -> List[Dict[str, str]]:
+        """Return a list of dicts with poems and infos
+
+        Keyword arguments:
+        poems_href -- list of dictionaries with infos of poems"""
+        poem_list = []
+
+        for poem_dict in poems_href:
+            text, er = self.get_poem(poem_dict["href"])
+            if er == 2:
+                break
+            poem_dict["text"] = text
+            poem_list.append(poem_dict)
+
+        return poem_list
 
 
 if __name__ == "__main__":
