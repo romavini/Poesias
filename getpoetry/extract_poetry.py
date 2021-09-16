@@ -1,6 +1,9 @@
+from getpoetry.psql.main import read_db, write_into_db
 from getpoetry.helpers import exception_handler, get_env, print_message
 from getpoetry.local_poetry import get_local_poem, get_local_poem_types
 from time import sleep
+import sys
+from datetime import datetime
 from random import random
 from typing import Dict, List
 from selenium.webdriver import Chrome
@@ -8,17 +11,35 @@ import pandas as pd
 
 
 class Extract:
-    def __init__(self, browser, local_poems):
+    def __init__(self, browser):
         self.browser = browser
+
         _, er = self.login()
+        if er == 2:
+            self.quit("all")
+
         pages, er = self.get_pages()
+        if er == 2 and not pages:
+            self.quit("all")
+
         poems_href, er = self.get_poems_href(pages)
+        if er == 2 and not poems_href:
+            self.quit("all")
+
+        print_message("Info", f"{len(poems_href)} new poems to add", "s")
+        if not poems_href:
+            self.quit("all")
+
         poems_list = self.get_poems_text(poems_href)
-        print(" ")
-        print(poems_list)
-        print(" ")
-        print(pd.DataFrame(poems_list))
-        print(" ")
+        self.quit("browser")
+        self.data = pd.DataFrame(poems_list)
+
+    def quit(self, q="browser"):
+        if q == "all":
+            self.browser.quit()
+            sys.exit()
+        elif q == "browser":
+            self.browser.quit()
 
     @exception_handler
     def login(self):
@@ -64,6 +85,10 @@ class Extract:
 
         Keyword arguments:
         pages -- List of pages."""
+
+        db_poems = read_db("poems")
+        db_titles = db_poems["title"].to_list()
+
         poems = []
 
         for page in pages:
@@ -75,13 +100,21 @@ class Extract:
             views = self.browser.find_elements_by_class_name("index-views")[1:]
 
             for title, category, date, view in zip(titles, categories, dates, views):
-                poem = {}
                 p = title.find_element_by_tag_name("a")
+
+                if p.text in db_titles:
+                    continue
+
+                poem = {}
                 poem["title"] = p.text
                 poem["text"] = " "
                 poem["href"] = p.get_attribute("href")
                 poem["category"] = category.text
-                poem["date"] = date.text
+                poem["date"] = (
+                    date.text
+                    if ":" not in date.text
+                    else datetime.strftime(datetime.now(), "%d/%m/%y")
+                )
                 poem["views"] = view.text
                 poems.append(poem)
 
@@ -127,5 +160,10 @@ if __name__ == "__main__":
         "s",
     )
 
-    browser = Chrome()
-    ext = Extract(browser, local_poems)
+    browser = Chrome(
+        get_env("chrome_driver_path")
+    )  # Download webdriver at https://chromedriver.chromium.org/downloads
+
+    ext = Extract(browser)
+
+    write_into_db(ext.data, "poems")
