@@ -7,6 +7,19 @@ import os
 from dotenv import load_dotenv
 
 
+def remove_separator(text: str, separators: str = "\"',./<>()") -> str:
+    """Return a text without the separators.
+
+    Keyword arguments:
+    text -- text to be returned
+    separators -- str with separators to be removed
+    """
+    for sep in separators:
+        text = "".join(text.split(sep))
+
+    return text
+
+
 def get_env(info_name):
     """Return an information stored in dotenv"""
     load_dotenv()

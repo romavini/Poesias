@@ -1,5 +1,4 @@
-from datetime import datetime
-from getpoetry.helpers import get_env, print_message
+from db2md.helpers import get_env
 import pandas as pd
 from dataclasses import dataclass
 from sqlalchemy import (
@@ -9,7 +8,6 @@ from sqlalchemy import (
     DateTime,
     create_engine,
 )
-from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 
 

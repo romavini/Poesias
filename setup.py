@@ -1,9 +1,9 @@
 from distutils.core import setup
 
 setup(
-    name="GetPoetry",
+    name="Db2md",
     version="1.0",
-    description="Poetry webscraper",
+    description="Database Poetry Converter to .md file",
     author="romavini",
-    packages=["getpoetry"],
+    packages=["db2md"],
 )
