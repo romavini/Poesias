@@ -1,4 +1,4 @@
-### Mistérios do Caminho  
+### [Mistérios do Caminho](https://www.recantodasletras.com.br/cordel/6657855)  
 Quando me largo aos passos
 Pra chegar em algum lugar
 A mente sai viajar

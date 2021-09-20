@@ -1,4 +1,4 @@
-### Trivial  
+### [Trivial](https://www.recantodasletras.com.br/cordel/6649266)  
 Quando me vem essa dor
 Quando o pensar não passa
 Recorro pra algumas rimas

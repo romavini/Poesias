@@ -1,4 +1,4 @@
-### Encosta  
+### [Encosta](https://www.recantodasletras.com.br/contoscotidianos/6716149)  
 Como somos frágeis...
 
 Foi igual cena de filme. Assim que o carro capotou, fechei os olhos e esperei. Já não tinha o que fazer. Foram poucos milésimos apenas ouvindo os estrondos ao meu redor enquanto o carro capotava descendo uma das muitas ladeiras à beira da estrada.

@@ -1,4 +1,4 @@
-### A Luz dos Injustiçados  
+### [A Luz dos Injustiçados](https://www.recantodasletras.com.br/cordel/7074365)  
 Centro da Ásia Menor
 Onde hoje é Turquia
 Há muitos séculos atrás

@@ -1,4 +1,4 @@
-### Arte É A Dor  
+### [Arte É A Dor](https://www.recantodasletras.com.br/poesias-de-desilusao/6753822)  
 Esse meu azul sangrar
 Que mancha precisamente
 No rastro da esferográfica

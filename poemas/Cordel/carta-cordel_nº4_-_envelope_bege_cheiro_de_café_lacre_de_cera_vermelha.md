@@ -1,4 +1,4 @@
-### Carta-cordel nº4 - envelope bege, cheiro de café, lacre de cera vermelha  
+### [Carta-cordel nº4 - envelope bege, cheiro de café, lacre de cera vermelha](https://www.recantodasletras.com.br/cordel/7308299)  
 Mais distante que o quisto
 Dia vinte e seis de julho
 

@@ -1,4 +1,4 @@
-### Maldição do Amor  
+### [Maldição do Amor](https://www.recantodasletras.com.br/poesiasdeamor/7211378)  
 Lembro como fosse hoje
 De ver aquela poesia
 De Neruda na parede

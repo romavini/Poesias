@@ -1,4 +1,4 @@
-### Depois que chorei a primeira vez, não parei mais.  
+### [Depois que chorei a primeira vez, não parei mais.](https://www.recantodasletras.com.br/pensamentos/6878145)  
 Foi tardio
 porque eu calava
 Silêncio

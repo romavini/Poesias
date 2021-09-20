@@ -1,4 +1,4 @@
-### Sem tempo pra quem tem pressa  
+### [Sem tempo pra quem tem pressa](https://www.recantodasletras.com.br/poesias-do-cotidiano/6879338)  
 Tem que ter tempo.
 Tem?
 ...tanto quanto der

@@ -1,4 +1,4 @@
-### cabo de guerra  
+### [cabo de guerra](https://www.recantodasletras.com.br/cordel/6637084)  
 Quando a brisa vira vento
 Gela cada grão de areia
 Leva o sol pra lá do monte

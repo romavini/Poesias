@@ -1,4 +1,4 @@
-### A Confusão é Tanta  
+### [A Confusão é Tanta](https://www.recantodasletras.com.br/cordel/6657224)  
 Esse grito sem discurso
 Que angustia minha razão
 Faz cessar os pensamentos

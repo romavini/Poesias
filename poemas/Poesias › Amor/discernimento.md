@@ -1,4 +1,4 @@
-### Discernimento  
+### [Discernimento](https://www.recantodasletras.com.br/poesiasdeamor/7001894)  
 Vou te dar mais uma chance
 Mas não por princípios meus
 Ou quaisquer méritos teus

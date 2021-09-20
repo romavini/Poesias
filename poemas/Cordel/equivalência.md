@@ -1,4 +1,4 @@
-### Equivalência  
+### [Equivalência](https://www.recantodasletras.com.br/cordel/6671082)  
 — Amanhã trarei completo
 Pode deixar, eu prometo.
 Ganhando ou não outra chance

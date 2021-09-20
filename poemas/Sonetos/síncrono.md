@@ -1,4 +1,4 @@
-### Síncrono  
+### [Síncrono](https://www.recantodasletras.com.br/sonetos/7097789)  
 Se acredito em destino?
 Nessa eu preciso pensar.
 Não penso que sorte ou azar

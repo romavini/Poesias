@@ -1,4 +1,4 @@
-### o seu pedir  
+### [o seu pedir](https://www.recantodasletras.com.br/cordel/6667415)  
 Pelo senso é evitado
 Seus incensos são cigarros
 Os seus olhos pelos bairros

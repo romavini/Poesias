@@ -1,4 +1,4 @@
-### Ter  
+### [Ter](https://www.recantodasletras.com.br/cordel/6673456)  
 Quem te vê comigo, diz
 Que é diferente o amar,
 Que a relação é distante,

@@ -1,4 +1,4 @@
-### João Diniz  
+### [João Diniz](https://www.recantodasletras.com.br/cordel/6661223)  
 Escola, lugar interessante
 Cheio de tipo de estudante
 De tudo que é tipo que dá

@@ -1,4 +1,4 @@
-### Shikamaru  
+### [Shikamaru](https://www.recantodasletras.com.br/poesias-de-vida/7343582)  
 No destino, escuridão.
 No encalço, seus defeitos.
 A fuga da própria sombra

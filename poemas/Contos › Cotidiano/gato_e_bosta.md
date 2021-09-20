@@ -1,4 +1,4 @@
-### Gato e Bosta  
+### [Gato e Bosta](https://www.recantodasletras.com.br/contoscotidianos/6653402)  
 Pedro desceu do carro e achou no para-choque a metáfora para como sentia seu coração: amassado e sangrando. Olhando na avenida Ezequiel, no caminho de onde veio, encontrou, a uma derrapada atrás, o magrelo suicida.
 
 — Pronto — gritou —, esse é o pior dia da minha vida.— Não sei muito da vida do Pedro, mas acho que ele estava certo.
