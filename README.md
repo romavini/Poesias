@@ -1,5 +1,6 @@
 # Poesias ✒🤖
 [![License: CC-BY-NC-SA](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)
+
 Olá, esse repositório é destinado para arquivo de poesias autorais em _markdown_.
 Este repositório faz parte de um projeto de estudo de SQL. As poesias aqui registradas foram [coletadas, inseridas em uma base de dados](https://github.com/romavini/Web-Scraping-Recanto-Das-Letras) e depois [transformadas em arquivo _markdown_](https://github.com/romavini/PSQL_2_.md) em um processo automatizado.
 
